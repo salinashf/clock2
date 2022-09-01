@@ -1,18 +1,20 @@
 import 'package:flutter/material.dart';
 
 class SizeConfig {
-  static MediaQueryData _mediaQueryData ;
-  static double screenWidth ;
-  static double screenHeight ;
-  static double defaultSize ;
-  static Orientation orientation ;
+  late MediaQueryData _mediaQueryData ;
+  late double _screenWidth ;
+  late double _screenHeight ;
+  late double defaultSize ;
+  late Orientation orientation ;
 
   void init(BuildContext context) {
     _mediaQueryData = MediaQuery.of(context);
-    screenWidth = _mediaQueryData.size.width;
-    screenHeight = _mediaQueryData.size.height;
+    _screenWidth = _mediaQueryData.size.width;
+    _screenHeight = _mediaQueryData.size.height;
     orientation = _mediaQueryData.orientation;
   }
+  static double  get screenWidth => 100;
+  static double get screenHeight => 200;
 }
 
 // Get the proportionate height as per screen size

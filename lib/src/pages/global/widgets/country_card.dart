@@ -4,7 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 class CountryCard extends StatelessWidget {
   const CountryCard({
-    required Key key,
+    Key ? key,
     required this.country,
     required this.timeZone,
     required this.iconSrc,
@@ -27,7 +27,7 @@ class CountryCard extends StatelessWidget {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
               border: Border.all(
-                color: Theme.of(context).primaryIconTheme.color,
+                color: Color(0xFFC1C709),
               ),
             ),
             child: Column(

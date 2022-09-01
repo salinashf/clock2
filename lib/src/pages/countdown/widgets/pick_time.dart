@@ -71,13 +71,13 @@ class _PickTimeState extends State<PickTime> {
                     setState(() {
                       switch (title) {
                         case "Hour":
-                          hour = val;
+                          hour =  int.parse(val.toString());
                           break;
                         case "Minute":
-                          minute = val;
+                          minute = int.parse(val.toString());
                           break;
                         case "Second":
-                          second = val;
+                          second = int.parse(val.toString());
                           break;
                       }
                       _.updateTime(hour, minute, second);
