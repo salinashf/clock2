@@ -90,7 +90,7 @@ class _PickTimeState extends State<PickTime> {
           SizedBox(height: 12.0),
           Text(
             title,
-            style: Theme.of(context).textTheme.headline1.copyWith(
+            style: Theme.of(context).textTheme.headline1?.copyWith(
                   fontSize: width / 26.0,
                   fontWeight: FontWeight.w500,
                   color: Theme.of(context).iconTheme.color,

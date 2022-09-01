@@ -116,7 +116,7 @@ class _AlarmPageState extends State<AlarmPage> {
           children: [
             Text(
               '${alarmController.formatTime(dateTime.hour)}:${alarmController.formatTime(dateTime.minute)}:${alarmController.formatTime(dateTime.second)}',
-              style: Theme.of(context).textTheme.headline1.copyWith(
+              style: Theme.of(context).textTheme.headline1?.copyWith(
                     fontSize: width / 10.0,
                     fontFamily: 'Lato',
                     fontWeight: FontWeight.w400,
@@ -125,7 +125,7 @@ class _AlarmPageState extends State<AlarmPage> {
             SizedBox(height: 2.0),
             Text(
               'The alarm will continue\nin 3 hours',
-              style: Theme.of(context).textTheme.headline1.copyWith(
+              style: Theme.of(context).textTheme.headline1?.copyWith(
                     fontSize: width / 26.0,
                     fontFamily: 'Lato',
                     fontWeight: FontWeight.w400,

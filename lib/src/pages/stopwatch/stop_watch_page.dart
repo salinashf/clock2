@@ -93,7 +93,7 @@ class _StopWatchPageState extends State<StopWatchPage> {
                   TextSpan(
                     text:
                         '${stopWatchController.formatTime(dateTime.hour)}:${stopWatchController.formatTime(dateTime.minute)}:${stopWatchController.formatTime(dateTime.second)}',
-                    style: Theme.of(context).textTheme.headline1.copyWith(
+                    style: Theme.of(context).textTheme.headline1?.copyWith(
                           fontSize: width / 12.0,
                           fontFamily: 'Lato',
                           fontWeight: FontWeight.w400,
@@ -102,7 +102,7 @@ class _StopWatchPageState extends State<StopWatchPage> {
                   TextSpan(
                     text:
                         ':${stopWatchController.formatTime((dateTime.millisecond / 17).round())}',
-                    style: Theme.of(context).textTheme.headline1.copyWith(
+                    style: Theme.of(context).textTheme.headline1?.copyWith(
                           fontSize: width / 18.0,
                           fontFamily: 'Lato',
                           fontWeight: FontWeight.w400,
@@ -118,7 +118,7 @@ class _StopWatchPageState extends State<StopWatchPage> {
                   TextSpan(
                     text:
                         '${stopWatchController.formatTime(dateTimePrevious.hour)}:${stopWatchController.formatTime(dateTimePrevious.minute)}:${stopWatchController.formatTime(dateTimePrevious.second)}',
-                    style: Theme.of(context).textTheme.headline1.copyWith(
+                    style: Theme.of(context).textTheme.headline1?.copyWith(
                           fontSize: width / 18.0,
                           fontFamily: 'Lato',
                           fontWeight: FontWeight.w400,
@@ -127,7 +127,7 @@ class _StopWatchPageState extends State<StopWatchPage> {
                   TextSpan(
                     text:
                         ':${stopWatchController.formatTime((dateTimePrevious.millisecond / 17).round())}',
-                    style: Theme.of(context).textTheme.headline1.copyWith(
+                    style: Theme.of(context).textTheme.headline1?.copyWith(
                           fontSize: width / 26.0,
                           fontFamily: 'Lato',
                           fontWeight: FontWeight.w400,

@@ -81,7 +81,7 @@ class _CountDownPageState extends State<CountDownPage> {
         child: Center(
           child: Text(
             '${countDownController.formatTime(dateTime.hour)}:${countDownController.formatTime(dateTime.minute)}:${countDownController.formatTime(dateTime.second)}',
-            style: Theme.of(context).textTheme.headline1.copyWith(
+            style: Theme.of(context).textTheme.headline1?.copyWith(
                   fontSize: width / 10.0,
                   fontFamily: 'Lato',
                   fontWeight: FontWeight.w400,

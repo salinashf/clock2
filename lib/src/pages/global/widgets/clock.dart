@@ -8,7 +8,7 @@ import 'clock_painter.dart';
 
 class Clock extends StatelessWidget {
   final DateTime dateTime;
-  Clock({this.dateTime});
+  Clock({required this.dateTime});
   Widget build(BuildContext context) {
     return Stack(
       children: [

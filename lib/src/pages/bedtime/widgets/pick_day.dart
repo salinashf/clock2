@@ -45,7 +45,7 @@ class _PickDayState extends State<PickDay> {
         onPressed: () => pickDay(index),
         child: Text(
           values[index],
-          style: Theme.of(context).textTheme.headline2.copyWith(
+          style: Theme.of(context).textTheme.headline2?.copyWith(
                 fontSize: width / 23.0,
                 fontFamily: 'Lato',
                 fontWeight: FontWeight.w400,

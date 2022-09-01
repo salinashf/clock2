@@ -194,7 +194,7 @@ class _BedTimePageState extends State<BedTimePage> {
         Text(
           time,
           style: TextStyle(
-            color: Theme.of(context).textTheme.bodyText1.color,
+            color: Theme.of(context).textTheme.bodyText1?.color,
             fontFamily: 'Lato',
             fontSize: width / 12.5,
             fontWeight: FontWeight.w600,

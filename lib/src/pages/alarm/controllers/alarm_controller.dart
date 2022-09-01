@@ -6,7 +6,7 @@ class AlarmController extends GetxController {
   StreamController<DateTime> currentTime =
       StreamController<DateTime>.broadcast();
   ScrollController scrollController = new ScrollController();
-  Timer timer;
+  late Timer timer ;
   double percent = .0;
   bool isRunning = false;
   List<DateTime> dateTimes = [];

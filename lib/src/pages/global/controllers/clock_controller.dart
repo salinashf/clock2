@@ -5,7 +5,7 @@ import 'package:get/get.dart';
 class ClockController extends GetxController {
   StreamController<DateTime> currentDay =
       StreamController<DateTime>.broadcast();
-  Timer timer;
+  late Timer timer;
   TimeOfDay timeOfDay = TimeOfDay.now();
   String formatTime(int input) {
     if (input < 10) {

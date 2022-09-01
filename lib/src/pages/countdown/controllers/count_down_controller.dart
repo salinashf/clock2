@@ -8,7 +8,7 @@ class CountDownController extends GetxController {
   double percent = .0;
   bool isRunning = false;
   DateTime dateTime = DateTime(0, 0, 0, 0, 0, 0);
-  Timer timer;
+  late Timer timer;
 
   formatTime(input) {
     if (input < 10) {

@@ -34,7 +34,7 @@ class _ListAlarmState extends State<ListAlarm> {
                   children: [
                     Text(
                       'Alarm: ${index + 1}',
-                      style: Theme.of(context).textTheme.headline1.copyWith(
+                      style: Theme.of(context).textTheme.headline1?.copyWith(
                             fontSize: width / 24.0,
                             fontFamily: 'Lato',
                             fontWeight: FontWeight.w600,
@@ -43,15 +43,15 @@ class _ListAlarmState extends State<ListAlarm> {
                     SizedBox(height: 8.0),
                     Text(
                       format.format(_.dateTimes[index]) + ',\t\tAlarm Daily',
-                      style: Theme.of(context).textTheme.headline1.copyWith(
+                      style: Theme.of(context).textTheme.headline1?.copyWith(
                             fontSize: width / 24.0,
                             fontFamily: 'Lato',
                             fontWeight: FontWeight.w400,
                             color: Theme.of(context)
                                 .textTheme
                                 .headline1
-                                .color
-                                .withOpacity(.8),
+                                ?.color
+                                ?.withOpacity(.8),
                           ),
                     ),
                   ],

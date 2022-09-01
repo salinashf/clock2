@@ -15,7 +15,7 @@ class TabBarLayout extends StatefulWidget {
 
 class _TabBarLayoutState extends State<TabBarLayout>
     with SingleTickerProviderStateMixin {
-  TabController _tabController;
+  late TabController _tabController;
 
   var _pages = [
     AlarmPage(),

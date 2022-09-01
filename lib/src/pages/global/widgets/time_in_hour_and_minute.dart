@@ -5,9 +5,9 @@ import 'package:get/get.dart';
 
 class TimeInHourAndMinute extends StatelessWidget {
   TimeInHourAndMinute({
-    Key key,
-    this.timeOfDay,
-    @required this.showPeriod,
+    required Key key,
+    required this.timeOfDay,
+    required this.showPeriod,
   }) : super(key: key);
   final TimeOfDay timeOfDay;
   final bool showPeriod;

@@ -7,7 +7,7 @@ import 'time_in_hour_and_minute.dart';
 
 class Body extends StatelessWidget {
   final DateTime dateTime;
-  Body({this.dateTime});
+  Body({required this.dateTime});
   @override
   Widget build(BuildContext context) {
     DateFormat format = DateFormat('hh:mm');
@@ -19,7 +19,7 @@ class Body extends StatelessWidget {
           children: [
             Text(
               "Ho Chi Minh, Viet Nam",
-              style: Theme.of(context).textTheme.bodyText1.copyWith(
+              style: Theme.of(context).textTheme.bodyText1?.copyWith(
                     fontFamily: 'Lato',
                     fontWeight: FontWeight.w600,
                     fontSize: width / 26.0,

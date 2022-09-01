@@ -1,3 +1,4 @@
+// @dart=2.9
 import 'package:clock2/src/routes/app_pages.dart';
 import 'package:clock2/src/shared/logger/logger_utils.dart';
 import 'package:clock2/src/theme/theme_service.dart';

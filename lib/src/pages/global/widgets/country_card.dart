@@ -4,12 +4,12 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 class CountryCard extends StatelessWidget {
   const CountryCard({
-    Key key,
-    @required this.country,
-    @required this.timeZone,
-    @required this.iconSrc,
-    @required this.time,
-    @required this.period,
+    required Key key,
+    required this.country,
+    required this.timeZone,
+    required this.iconSrc,
+    required this.time,
+    required this.period,
   }) : super(key: key);
 
   final String country, timeZone, iconSrc, time, period;
@@ -38,7 +38,7 @@ class CountryCard extends StatelessWidget {
                   style: Theme.of(context)
                       .textTheme
                       .headline4
-                      .copyWith(fontSize: getProportionateScreenWidth(16)),
+                      ?.copyWith(fontSize: getProportionateScreenWidth(16)),
                 ),
                 SizedBox(height: 5),
                 Text(timeZone),

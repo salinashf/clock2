@@ -7,7 +7,7 @@ class StopWatchController extends GetxController {
       StreamController<DateTime>.broadcast();
   ScrollController scrollController = new ScrollController();
   DateTime dateTime = DateTime(0, 0, 0, 0, 0, 0);
-  Timer timer;
+  late Timer timer ;
   double percent = .0;
   bool isRunning = false;
   List<DateTime> dateTimes = [];

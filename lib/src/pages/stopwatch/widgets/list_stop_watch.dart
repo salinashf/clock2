@@ -37,7 +37,7 @@ class _ListStopWatchState extends State<ListStopWatch> {
                           Text(
                             'Stopwatch: ${_.dateTimes.length - index - 1}',
                             style:
-                                Theme.of(context).textTheme.headline1.copyWith(
+                                Theme.of(context).textTheme.headline1?.copyWith(
                                       fontSize: width / 24.0,
                                       fontFamily: 'Lato',
                                       fontWeight: FontWeight.w600,
@@ -47,7 +47,7 @@ class _ListStopWatchState extends State<ListStopWatch> {
                           Text(
                             format.format(_.dateTimes[index]),
                             style:
-                                Theme.of(context).textTheme.headline1.copyWith(
+                                Theme.of(context).textTheme.headline1?.copyWith(
                                       fontSize: width / 28.0,
                                       fontFamily: 'Lato',
                                       fontWeight: FontWeight.w400,
